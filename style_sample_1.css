@@ -323,11 +323,14 @@ section.what-section > .what-cards-container {
   box-sizing: border-box;
 }
 
-/* Cards */
+/* Cards – MAIN CHANGE HERE */
 section.what-section .what-card {
   position: relative;
-  width: 330px;
-  max-width: 100%;
+
+  /* Layout control */
+  flex: 1 1 330px;      /* Try to take 330px each */
+  max-width: 330px;     /* Prevent bigger expansion */
+
   height: 420px;
   border-radius: 22px;
   overflow: hidden;
@@ -336,6 +339,14 @@ section.what-section .what-card {
   background-color: #111;
   box-sizing: border-box;
   border: 2px solid #212529;
+}
+
+/* When the screen cannot fit 3×330px → 1 per row */
+@media screen and (max-width: 1100px) {
+  section.what-section .what-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 section.what-section .what-card .what-card-img {
@@ -422,7 +433,7 @@ section.what-section .arrow-btn:hover {
   color: black;
 }
 
-/* Responsive */
+/* Responsive text sizes */
 @media screen and (max-width: 992px) {
   section.what-section h2.what-heading { font-size: 32px; }
   section.what-section > .what-cards-container { padding: 0 28px; }
@@ -430,9 +441,10 @@ section.what-section .arrow-btn:hover {
 
 @media screen and (max-width: 576px) {
   section.what-section h2.what-heading { font-size: 28px; }
-  section.what-section .what-card { width: 100%; height: 380px; }
+  section.what-section .what-card { height: 380px; }
   section.what-section .card-overlay { padding: 18px; }
 }
+
 /* MOU PART */
 
 

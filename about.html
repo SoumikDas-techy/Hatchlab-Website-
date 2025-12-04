@@ -50,17 +50,19 @@
     .main-header {
         position: fixed;
         top: 0;
-        left: 0;
         width: 100%;
         display: flex;
-        justify-content:space-between;;
+        justify-content:center;
         align-items: center;
-        padding: 15px 1px;
+        padding:20px 60px;
         background: rgba(23, 22, 31, 0.9);
         backdrop-filter: blur(10px);
         z-index: 1000;
     }
-   
+     .main-header>* {
+      flex: 1;
+    }
+
     .header-nav {
         text-align: center;
     }
@@ -93,16 +95,18 @@
     }
     .main {
         /* Increased padding-top to push content down */
-        padding-top: 120px;
+        padding-top: 20px;
         left: 0;
         width: 100%;
+       
         position: relative;
-        z-index: 1;
+        z-index: 0;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         /* Set a significant min-height to ensure scrolling to footer */
-        min-height: 70vh; 
+        min-height: 26vh; 
+      
     }
     .hero {
         text-align: center;
@@ -118,7 +122,7 @@
     }
 
     .word.yellow {
-        color: #fcd703;
+        color: yellow;
     }
     .line {
         display: block;

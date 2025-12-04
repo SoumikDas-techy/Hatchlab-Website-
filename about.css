@@ -17,7 +17,7 @@ body{
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 20px #ffff00, 0 0 40px rgba(255, 255, 0, 0.5);
+ 
     transition: transform 0.1s ease;
 }
 
@@ -70,7 +70,7 @@ body{
 /* ----------- FIXED RESPONSIVE HEADER ----------- */
 .main-header {
     position: fixed;
-    top: 0;
+    top:25%;
     left: 0;
     width: 100%;
     display: flex;
@@ -79,7 +79,7 @@ body{
     padding: 10px 20px;
     background: rgba(23, 22, 31, 0.9);
     backdrop-filter: blur(10px);
-    z-index: -100;
+    z-index: 0;
 }
 
 /* Logo + Brand name container */
@@ -296,7 +296,7 @@ body{
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s;
+    
     width: 100%;
 }
 
@@ -361,12 +361,11 @@ body{
 .about-section h2 {
     font-size: 1.6em;
     font-weight: 500;
-    color: yellow; 
-    /* 1. PUSH PARAGRAPH DOWN: Increased margin-bottom */
+    color: #ffc46b; 
     margin-bottom: 40px; 
-    padding-bottom: 0; /* Ensures no padding remains if border is removed */
-    /* 2. REMOVE LINE: Remove the border-bottom declaration here if it existed, or ensure no existing border-bottom is set. */
+    padding-bottom: 0;
     border-bottom: none; 
+    text-shadow: 0 0 8px rgba(255, 196, 107, 0.7) !important;
 }
 
 /* --- Paragraph Styling --- */
@@ -405,7 +404,7 @@ body{
     .about-section p {
         font-size: 1.05em;
     }
-/* The block closes here */
+
 } 
 
 
@@ -452,4 +451,3 @@ body{
         font-size: 15px;
     }
 }
-

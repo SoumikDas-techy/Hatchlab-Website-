@@ -979,5 +979,47 @@ section.what-section h2.what-heading {
 }
 
 
+.initiative-content,
+.initiative-content p,
+.initiative-content > * {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
+
+.initiative-item-title {
+  color: #ffffff !important;
+}
+
+.initiative-btn {
+  color: #fcd703 !important;
+  border-color: #fcd703 !important;
+  background: transparent !important;
+}
+
+.initiative-btn:hover {
+  background: #fcd703 !important;
+  color: #000000 !important;
+  border-color: #fcd703 !important;
+}
+
+.initiative-item-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  background: linear-gradient(90deg, #ffe29f, #ffc46b) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: 0 0 8px rgba(255, 196, 107, 0.7) !important;
+}
+
+.initiative-image img,
+.initiative-right-img img {
+  height: 320px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+
+
 
 

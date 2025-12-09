@@ -100,7 +100,7 @@ h2 {
   border-radius: 10px;
   padding: 20px;
   margin: 30px 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0 0 14px rgba(255, 196, 107, 0.4);
 }
 
@@ -339,4 +339,128 @@ ul li {
     white-space: nowrap !important;
   }
 }
+
+/* ===============================
+   ✅ AESTHETIC SMOOTH CARD FEEL
+   =============================== */
+
+.card {
+  transform: translateY(0);   /* ✅ Always visible */
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+}
+
+/* ===============================
+   ✅ SOFT FLOAT ON HOVER
+   =============================== */
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 10px 26px rgba(0, 0, 0, 0.35),
+    0 0 10px rgba(255, 215, 0, 0.25);
+  border: 2px solid #ffd700;
+}
+
+/* ===============================
+   ✅ SOFT TEXT COLOR HIGHLIGHT
+   =============================== */
+
+.card:hover h3 {
+  color: #ffd700;
+  transition: 0.3s;
+}
+
+/* ===============================
+   ✅ MICRO INTERACTION (PRESS FEEL)
+   =============================== */
+
+.card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* ===============================
+   ✅ MOBILE SAFE (NO JERK)
+   =============================== */
+
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+/*CARD GOLD BORDER*/
+.card {
+  border-left: 5px solid #ffd700;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/*HEADING UNDERLINE LOOK*/
+h1, h2 {
+  position: relative;
+  display: block;          /* ✅ Forces each heading on a new line */
+  width: fit-content;     /* ✅ Keeps underline only under text */
+  padding-bottom: 14px;
+  margin-bottom: 25px;
+}
+
+h1::after, 
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70%;
+  height: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ffd700,
+    transparent
+  );
+  opacity: 0.8;
+}
+/* EMAIL LINK LOOK*/
+.email {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 215, 0, 0.6);
+  color: #ffd700;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 215, 0, 0.08),
+    rgba(0, 0, 0, 0.6)
+  );
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: 
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.email:hover {
+  background: #ffd700;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 20px rgba(255, 215, 0, 0.35);
+}
+
+.content h2 {
+  margin-top: 60px;
+}
+
+.content h1, .content h2, .card {
+  transition: all 0.3s ease;
+}
+
+
+
 

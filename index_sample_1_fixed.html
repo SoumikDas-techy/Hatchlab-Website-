@@ -255,7 +255,7 @@
       </div>
     </div>
   </div>
-<!--SMRITILATA PART-->
+  <!--SMRITILATA PART-->
   <div class="about-section home-section">
     <h2>About Us</h2>
     <p>
@@ -451,13 +451,13 @@
   <!-- SHIVAM PART -->
   <!-- Gallery with Infinite Linear Carousel -->
   <section class="founder home-section">
-    
+
     <div class="gallery-section">
       <div class="bg-dots layer1"></div>
-    <div class="bg-dots layer2"></div>
-    <div class="bg-dots layer3"></div>
-    <div class="bg-dots layer4"></div>
-      
+      <div class="bg-dots layer2"></div>
+      <div class="bg-dots layer3"></div>
+      <div class="bg-dots layer4"></div>
+
       <h2 class="gallery-heading">Gallery</h2>
 
 
@@ -542,65 +542,67 @@
   <!-- SHIVAM PART -->
 
 
-<footer class="footer-section">
-        <!-- Main horizontal row -->
-           <div class="footer-gradient">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-        <div class="footer-content">
-            <!-- Column 1: Logo + Copyright -->
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="HatchLab Logo">
-                </div>
-                <p class="footer-meta">© 2025 HatchLab Innovations Pvt. Ltd.<br>All rights reserved.</p>
-            </div>
-
-            <!-- Column 2: Links -->
-            <div class="footer-column">
-                <nav class="footer-links">
-                    <a href="https://www.hatchlabinnovations.com/career">Career</a>
-                    <a href="https://www.hatchlabinnovations.com/contact">Contact</a>
-                </nav>
-            </div>
-
-            <!-- Column 3: Contact Info -->
-            <div class="footer-column">
-                <div class="footer-contact">
-                    <a href="tel:+918276057111">+91 8276057111</a>
-                    <a href="mailto:info@hatchlabinnovations.com">info@hatchlabinnovations.com</a>
-                    <a href="mailto:admin@hatchlabinnovations.com">admin@hatchlabinnovations.com</a>
-                </div>
-            </div>
-
-            <!-- Column 4: Email Form -->
-            <div class="footer-column">
-                <form class="footer-form" action="#" onsubmit="return false;">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Contact Us</button>
-                </form>
-            </div>
+  <footer class="footer-section">
+    <!-- Main horizontal row -->
+    <div class="footer-gradient">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="footer-content">
+      <!-- Column 1: Logo + Copyright -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="HatchLab Logo">
         </div>
+        <p class="footer-meta">© 2025 HatchLab Innovations Pvt. Ltd.<br>All rights reserved.</p>
+      </div>
 
-        <!-- Social icons – vertical & centered below the text -->
-        <div class="footer-social">
-            <p>Connect with us through -</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/company/hatchlab-innovations/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/hatchlabinnovations.official/" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/people/Hatchlab-Innovations/61558095073459/" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
+      <!-- Column 2: Links -->
+      <div class="footer-column">
+        <nav class="footer-links">
+          <a href="https://www.hatchlabinnovations.com/career">Career</a>
+          <a href="https://www.hatchlabinnovations.com/contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+        <div class="footer-contact">
+          <a href="tel:+918276057111">+91 8276057111</a>
+          <a href="mailto:info@hatchlabinnovations.com">info@hatchlabinnovations.com</a>
+          <a href="mailto:admin@hatchlabinnovations.com">admin@hatchlabinnovations.com</a>
         </div>
-    </footer>
+      </div>
+
+      <!-- Column 4: Email Form -->
+      <div class="footer-column">
+        <form class="footer-form" action="#" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Social icons – vertical & centered below the text -->
+    <div class="footer-social">
+      <p>Connect with us through -</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/hatchlab-innovations/posts/?feedView=all" target="_blank"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/hatchlabinnovations.official/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Hatchlab-Innovations/61558095073459/" target="_blank"
+          aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -627,53 +629,53 @@
 
   <!-- INIT: OUR INITIATIVES OWL CAROUSEL -->
   <!-- INIT: OUR INITIATIVES OWL CAROUSEL - WITH 5 SECOND AUTOPLAY -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.jQuery && typeof jQuery.fn.owlCarousel === 'function') {
-      jQuery(function ($) {
-        var $carousel = $('.initiative-carousel');
-        if ($carousel.length) {
-          // Destroy if already initialized (prevents duplicates)
-          if ($carousel.hasClass('owl-loaded')) {
-            $carousel.trigger('destroy.owl.carousel');
-            $carousel.removeClass('owl-loaded owl-drag');
-          }
-
-          $carousel.owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 24,
-            nav: false,
-            dots: true,
-            autoplay: true,                  // Enable autoplay
-            autoplayTimeout: 5000,           // 5 seconds = 5000ms
-            autoplayHoverPause: true,        // Pause when user hovers (optional but recommended)
-            smartSpeed: 800,                 // Smooth transition
-            animateOut: 'fadeOut',           // Optional: nice fade effect
-            animateIn: 'fadeIn',             // Optional: nice fade effect
-            responsive: {
-              0: { items: 1 },
-              600: { items: 1 },
-              1000: { items: 1 }
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.jQuery && typeof jQuery.fn.owlCarousel === 'function') {
+        jQuery(function ($) {
+          var $carousel = $('.initiative-carousel');
+          if ($carousel.length) {
+            // Destroy if already initialized (prevents duplicates)
+            if ($carousel.hasClass('owl-loaded')) {
+              $carousel.trigger('destroy.owl.carousel');
+              $carousel.removeClass('owl-loaded owl-drag');
             }
-          });
 
-          // Manual navigation buttons
-          $('.initiative-prev').on('click', function (e) {
-            e.preventDefault();
-            $carousel.trigger('prev.owl.carousel', [600]);
-          });
-          $('.initiative-next').on('click', function (e) {
-            e.preventDefault();
-            $carousel.trigger('next.owl.carousel', [600]);
-          });
-        }
-      });
-    } else {
-      console.warn('jQuery or OwlCarousel not available for initiatives carousel.');
-    }
-  });
-</script>
+            $carousel.owlCarousel({
+              items: 1,
+              loop: true,
+              margin: 24,
+              nav: false,
+              dots: true,
+              autoplay: true,                  // Enable autoplay
+              autoplayTimeout: 5000,           // 5 seconds = 5000ms
+              autoplayHoverPause: true,        // Pause when user hovers (optional but recommended)
+              smartSpeed: 800,                 // Smooth transition
+              animateOut: 'fadeOut',           // Optional: nice fade effect
+              animateIn: 'fadeIn',             // Optional: nice fade effect
+              responsive: {
+                0: { items: 1 },
+                600: { items: 1 },
+                1000: { items: 1 }
+              }
+            });
+
+            // Manual navigation buttons
+            $('.initiative-prev').on('click', function (e) {
+              e.preventDefault();
+              $carousel.trigger('prev.owl.carousel', [600]);
+            });
+            $('.initiative-next').on('click', function (e) {
+              e.preventDefault();
+              $carousel.trigger('next.owl.carousel', [600]);
+            });
+          }
+        });
+      } else {
+        console.warn('jQuery or OwlCarousel not available for initiatives carousel.');
+      }
+    });
+  </script>
 
   <!-- CONTINUOUS GALLERY CAROUSEL SCRIPT  -->
   <!-- <script>
@@ -868,7 +870,7 @@
 
 
 
-<!-- <script>
+  <!-- <script>
 
   document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('.udyog-gallery-owl');
@@ -946,68 +948,68 @@
 </script> -->
 
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  // use your existing gallery cards as 3D panels
-  const panels = gsap.utils.toArray(".udyog-gallery-owl .gallery-card");
-  if (!panels.length) return;
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // use your existing gallery cards as 3D panels
+      const panels = gsap.utils.toArray(".udyog-gallery-owl .gallery-card");
+      if (!panels.length) return;
 
-  const total = panels.length;
-  let current = Math.floor(total / 2);
+      const total = panels.length;
+      let current = Math.floor(total / 2);
 
 
-  // center panels and set base style once
-  gsap.set(panels, {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    xPercent: -50,
-    yPercent: -50,
-    transformOrigin: "center center",
-    transformStyle: "preserve-3d"
-  });
-
-  function layout(instant = false) {
-    panels.forEach((panel, i) => {
-      const offset = i - current;             // distance from active slide
-      const x = offset * 260;                 // horizontal spacing
-      const z = -Math.abs(offset) * 160;      // push back side slides
-      const rotY = offset * -14;              // angle cards
-      const scale = i === current ? 1 : 0.8;  // center bigger
-      const opacity = i === current ? 1 : 0.35;
-
-      gsap.to(panel, {
-        duration: instant ? 0 : 0.7,
-        x,
-        z,
-        rotateY: rotY,
-        scale,
-        opacity,
-        ease: "power3.inOut"
+      // center panels and set base style once
+      gsap.set(panels, {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+        transformOrigin: "center center",
+        transformStyle: "preserve-3d"
       });
+
+      function layout(instant = false) {
+        panels.forEach((panel, i) => {
+          const offset = i - current;             // distance from active slide
+          const x = offset * 260;                 // horizontal spacing
+          const z = -Math.abs(offset) * 160;      // push back side slides
+          const rotY = offset * -14;              // angle cards
+          const scale = i === current ? 1 : 0.8;  // center bigger
+          const opacity = 1;
+
+          gsap.to(panel, {
+            duration: instant ? 0 : 0.7,
+            x,
+            z,
+            rotateY: rotY,
+            scale,
+            opacity,
+            ease: "power3.inOut"
+          });
+        });
+      }
+
+      // first layout
+      layout(true);
+
+      // hook to your existing arrows
+      const nextBtn = document.querySelector(".gallery-controls .next");
+      const prevBtn = document.querySelector(".gallery-controls .prev");
+
+      function goTo(idxDelta) {
+        current = (current + idxDelta + total) % total;
+        layout(false);
+      }
+
+      if (nextBtn) nextBtn.addEventListener("click", () => goTo(1));
+      if (prevBtn) prevBtn.addEventListener("click", () => goTo(-1));
     });
-  }
-
-  // first layout
-  layout(true);
-
-  // hook to your existing arrows
-  const nextBtn = document.querySelector(".gallery-controls .next");
-  const prevBtn = document.querySelector(".gallery-controls .prev");
-
-  function goTo(idxDelta) {
-    current = (current + idxDelta + total) % total;
-    layout(false);
-  }
-
-  if (nextBtn) nextBtn.addEventListener("click", () => goTo(1));
-  if (prevBtn) prevBtn.addEventListener("click", () => goTo(-1));
-});
 
 
 
 
-</script>
+  </script>
 
 
 
@@ -1076,39 +1078,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   <script>
-(function(){
-  const container = document.querySelector('.gallery-section .gallery-particles');
-  if(!container) return;
-  const count = Math.min(18, Math.floor(window.innerWidth/80));
-  const colors = ['rgba(252,215,3,0.95)','rgba(255,255,255,0.06)'];
-  function createParticle(i){
-    const el = document.createElement('div');
-    el.className = 'particle';
-    el.style.left = Math.random()*100 + '%';
-    el.style.top = (20 + Math.random()*60) + '%';
-    const size = (Math.random()*6 + 4) * (window.innerWidth < 600 ? 0.8 : 1);
-    el.style.width = size + 'px';
-    el.style.height = size + 'px';
-    el.style.background = colors[Math.floor(Math.random()*colors.length)];
-    const delay = Math.random()*6;
-    el.style.animationDelay = delay + 's';
-    container.appendChild(el);
-  }
-  for(let i=0;i<count;i++) createParticle(i);
+    (function () {
+      const container = document.querySelector('.gallery-section .gallery-particles');
+      if (!container) return;
+      const count = Math.min(18, Math.floor(window.innerWidth / 80));
+      const colors = ['rgba(252,215,3,0.95)', 'rgba(255,255,255,0.06)'];
+      function createParticle(i) {
+        const el = document.createElement('div');
+        el.className = 'particle';
+        el.style.left = Math.random() * 100 + '%';
+        el.style.top = (20 + Math.random() * 60) + '%';
+        const size = (Math.random() * 6 + 4) * (window.innerWidth < 600 ? 0.8 : 1);
+        el.style.width = size + 'px';
+        el.style.height = size + 'px';
+        el.style.background = colors[Math.floor(Math.random() * colors.length)];
+        const delay = Math.random() * 6;
+        el.style.animationDelay = delay + 's';
+        container.appendChild(el);
+      }
+      for (let i = 0; i < count; i++) createParticle(i);
 
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      const c = document.querySelector('.gallery-section .gallery-particles');
-      if(!c) return;
-      while(c.firstChild) c.removeChild(c.firstChild);
-      const newCount = Math.min(22, Math.floor(window.innerWidth/80));
-      for(let i=0;i<newCount;i++) createParticle(i);
-    },120);
-  });
-})();
-</script>
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const c = document.querySelector('.gallery-section .gallery-particles');
+          if (!c) return;
+          while (c.firstChild) c.removeChild(c.firstChild);
+          const newCount = Math.min(22, Math.floor(window.innerWidth / 80));
+          for (let i = 0; i < newCount; i++) createParticle(i);
+        }, 120);
+      });
+    })();
+  </script>
 
 
   <!-- PARTICLES INIT -->
@@ -1160,7 +1162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heroChars.forEach((char, index) => {
         char.style.animation = 'none';
         char.offsetHeight;
-        char.style.animation = `bounceElastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards` ;
+        char.style.animation = `bounceElastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards`;
         char.style.animationDelay = `${index * 0.08}s`;
       });
 
@@ -1205,57 +1207,57 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Safety: if GSAP or ScrollTrigger is missing, don't hide anything
-    if (!window.gsap || !window.ScrollTrigger) {
-      console.warn("GSAP / ScrollTrigger not found – scroll animations skipped.");
-      return;
-    }
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Safety: if GSAP or ScrollTrigger is missing, don't hide anything
+      if (!window.gsap || !window.ScrollTrigger) {
+        console.warn("GSAP / ScrollTrigger not found – scroll animations skipped.");
+        return;
+      }
 
-    gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(ScrollTrigger);
 
-    // All major sections EXCEPT the header
-    const sections = gsap.utils.toArray([
-      ".hero-sec",        // hero
-      ".about-section",   // about us
-      ".what-section",    // what we do
-      ".our-initiative",  // initiatives
-      ".founder",         // gallery section wrapper
-      "footer"            // footer
-    ]);
+      // All major sections EXCEPT the header
+      const sections = gsap.utils.toArray([
+        ".hero-sec",        // hero
+        ".about-section",   // about us
+        ".what-section",    // what we do
+        ".our-initiative",  // initiatives
+        ".founder",         // gallery section wrapper
+        "footer"            // footer
+      ]);
 
-    sections.forEach((sec, i) => {
-      gsap.from(sec, {
-        autoAlpha: 0,     // opacity 0 -> 1
-        y: 80,            // stronger upward movement (more prominent)
-        duration: 2.0,    // slower, more dramatic fade
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: sec,
-          start: "top 80%",      // when section top hits 80% of viewport
-          end: "top 40%",
-          toggleActions: "play none none reverse" // fade back out when scrolling up
-        }
+      sections.forEach((sec, i) => {
+        gsap.from(sec, {
+          autoAlpha: 0,     // opacity 0 -> 1
+          y: 80,            // stronger upward movement (more prominent)
+          duration: 2.0,    // slower, more dramatic fade
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: sec,
+            start: "top 80%",      // when section top hits 80% of viewport
+            end: "top 40%",
+            toggleActions: "play none none reverse" // fade back out when scrolling up
+          }
+        });
+      });
+
+      // Extra: animate individual gallery cards too (more punch)
+      gsap.utils.toArray(".gallery-card").forEach((card) => {
+        gsap.from(card, {
+          autoAlpha: 0,
+          y: 60,
+          duration: 1.6,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+          }
+        });
       });
     });
-
-    // Extra: animate individual gallery cards too (more punch)
-    gsap.utils.toArray(".gallery-card").forEach((card) => {
-      gsap.from(card, {
-        autoAlpha: 0,
-        y: 60,
-        duration: 1.6,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 90%",
-          toggleActions: "play none none reverse"
-        }
-      });
-    });
-  });
-</script>
+  </script>
 
 
 

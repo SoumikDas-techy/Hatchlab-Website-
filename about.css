@@ -599,3 +599,30 @@ body{
     transform: translate(0px, 0px) scale(1);
   }
 }
+.about-section h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #ffd703; 
+    margin-bottom: 40px; 
+    position: relative;
+    width: fit-content;
+    padding-bottom: 14px;
+}
+
+/* ✅ GRADIENT UNDERLINE */
+.about-section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70%;
+    height: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffd703,
+        transparent
+    );
+    opacity: 0.85;
+}

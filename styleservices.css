@@ -30,10 +30,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 4rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0;
     background: rgba(17, 17, 24, 0.45);  /* transparent */
     backdrop-filter: blur(10px);         /* glass effect */
     padding: 10px 20px 10px 100px;
@@ -91,7 +87,7 @@ header {
 .header-gradient > div:nth-child(3) {
   width: 75%;
   height: 75%;
-  background: #ede881;
+  background: #eae142;
   bottom: -20%;
   right: -15%;
   animation-delay: -6s;
@@ -140,16 +136,8 @@ header {
   }
 }
 
-.logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
 
-.logo img {
-    height: 2.5rem;
-    width: auto;
-}
+
 
 .nav-links {
     list-style: none;

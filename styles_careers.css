@@ -90,7 +90,7 @@ body {
 .header-gradient > div:nth-child(3) {
   width: 75%;
   height: 75%;
-  background: #eae142;
+  background: #ede881;
   bottom: -20%;
   right: -15%;
   animation-delay: -6s;
@@ -139,12 +139,7 @@ body {
   }
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
-    margin-left: -80px;
-    margin-right: 10px;
-}
+
 
 .nav-links {
     display: flex;

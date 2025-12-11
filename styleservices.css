@@ -30,12 +30,10 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-<<<<<<< HEAD
     gap: 4rem;
     width: 100%;
     max-width: 1200px;
     margin: 0;
-=======
     background: rgba(17, 17, 24, 0.45);  /* transparent */
     backdrop-filter: blur(10px);         /* glass effect */
     padding: 10px 20px 10px 100px;
@@ -140,7 +138,6 @@ header {
   100% {
     transform: translate(0px, 0px) scale(1);
   }
->>>>>>> 1b5d4e79ea2561c95f96c10ff3b569ef137a91df
 }
 
 .logo {

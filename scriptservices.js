@@ -37,10 +37,10 @@ function showSlide(n) {
 }
 
 function nextSlide() {
+    
     showSlide(slideIndex + 1);
 }
-// Auto-play every 6 seconds
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 4000);
 
 // Manual navigation
 function currentSlide(n) {

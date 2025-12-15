@@ -91,7 +91,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 1px;
   color: #fcd703;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 
@@ -824,7 +824,6 @@ html, body {
  
     transition: transform 0.1s ease;
 }
-
 
 
 

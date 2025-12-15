@@ -50,6 +50,7 @@ header.main-header {
 
 .logo {  /* New: For logo positioning */
     flex-shrink: 0;
+    
 }
 
 .logo img {

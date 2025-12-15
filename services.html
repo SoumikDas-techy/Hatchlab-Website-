@@ -306,6 +306,9 @@
         </p>
     </section>
 
+
+
+
     <!-- Slider -->
       <div class="page-wrapper">
         <div class="slider-container">
@@ -374,13 +377,7 @@
                 <p class="footer-meta">© 2025 HatchLab Innovations Pvt. Ltd.<br>All rights reserved.</p>
             </div>
 
-            <div class="footer-column">
-                <nav class="footer-links">
-                    <a href="https://www.hatchlabinnovations.com/career">Career</a>
-                    <a href="https://www.hatchlabinnovations.com/contact">Contact</a>
-                </nav>
-            </div>
-
+           
             <div class="footer-column">
                 <div class="footer-contact">
                     <a href="tel:+918276057111">+91 8276057111</a>
@@ -413,31 +410,7 @@
         </div>
     </footer>
 
-      <!-- Left Sidebar -->
-
-<!-- MODAL -->
-<div id="connectModal" class="custom-modal">
-  <div class="custom-modal-content">
-    <span class="close-modal">&times;</span>
-    <h3>Connect With Us</h3>
-
-    <form id="connectForm">
-      <label>Full Name</label>
-      <input type="text" required>
-
-      <label>Email</label>
-      <input type="email" required>
-
-       <label>Contact No</label>
-      <input type="number" required>
-
-      <label>Need support for</label>
-      <textarea rows="3" required></textarea>
-
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
-  </div>
-</div>
+    
 
 
 <script src="scriptservices.js"></script>
@@ -451,6 +424,30 @@ particlesJS("particles-js", {
     "size": { "value": 3 },
     "move": { "speed": 1 }
   }
+});
+</script>
+
+<script>
+// Glow Cursor Effect
+const glowCursor = document.querySelector('.glow-cursor');
+document.addEventListener('mousemove', (e) => {
+  glowCursor.style.left = e.clientX + 'px';
+  glowCursor.style.top = e.clientY + 'px';
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const faders = document.querySelectorAll(".fade-in-on-scroll");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__fadeInUp");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  faders.forEach(fader => observer.observe(fader));
 });
 </script>
 

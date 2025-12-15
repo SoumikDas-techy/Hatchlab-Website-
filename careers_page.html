@@ -289,12 +289,6 @@
             <p class="footer-meta">© 2025 HatchLab Innovations Pvt. Ltd.<br>All rights reserved.</p>
         </div>
 
-        <div class="footer-column">
-            <nav class="footer-links">
-                <a href="https://www.hatchlabinnovations.com/career">Career</a>
-                <a href="https://www.hatchlabinnovations.com/contact">Contact</a>
-            </nav>
-        </div>
 
         <div class="footer-column">
             <div class="footer-contact">
@@ -323,49 +317,29 @@
 </footer>
 
 
-<!-- MODAL -->
-<div id="connectModal" class="custom-modal">
-  <div class="custom-modal-content">
-    <span class="close-modal">&times;</span>
-    <h3>Connect With Us</h3>
 
-    <form id="connectForm">
-      <label>Full Name</label>
-      <input type="text" required>
-
-      <label>Email</label>
-      <input type="email" required>
-
-      <label>Contact No</label>
-      <input type="number" required>
-
-      <label>Need support for</label>
-      <textarea rows="3" required></textarea>
-
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
-  </div>
-</div>
 
 <script>
-// Modal Logic
-const modal = document.getElementById("connectModal");
-const btn = document.getElementById("connectBtn");
-const closeBtn = document.querySelector(".close-modal");
+// Glow Cursor Effect
+const glowCursor = document.querySelector('.glow-cursor');
+document.addEventListener('mousemove', (e) => {
+  glowCursor.style.left = e.clientX + 'px';
+  glowCursor.style.top = e.clientY + 'px';
+});
+</script>
 
-btn.onclick = () => modal.style.display = "flex";
-closeBtn.onclick = () => modal.style.display = "none";
-window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
-
-// Particles.js Background
-particlesJS("particles-bg", {
-  "particles": {
-    "number": { "value": 45 },      /* MORE PARTICLES */
-    "size": { "value": 2 },
-    "color": { "value": "#ffffff" },
-    "line_linked": { "enable": true, "color": "#ffffff" },
-    "move": { "enable": true, "speed": 1.5 }
-  }
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const faders = document.querySelectorAll(".fade-in-on-scroll");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__fadeInUp");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  faders.forEach(fader => observer.observe(fader));
 });
 </script>
 

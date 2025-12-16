@@ -471,5 +471,113 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
+<<<<<<< HEAD
+=======
+
+<script>
+(function () {
+  document.addEventListener("click", function (e) {
+    // OPEN MODAL
+    if (e.target.closest("#getInTouchBtn")) {
+      const modal = document.getElementById("contactModal");
+      if (!modal) return;
+
+      modal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    // CLOSE MODAL (X button)
+    if (e.target.closest(".close-contact-modal")) {
+      closeModal();
+    }
+
+    // CLOSE MODAL (outside click)
+    if (e.target.id === "contactModal") {
+      closeModal();
+    }
+  });
+
+  // ESC key close
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+
+  function closeModal() {
+    const modal = document.getElementById("contactModal");
+    if (!modal) return;
+
+    modal.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+})();
+</script>
+
+<script>
+    // Modal Logic
+    (function () {
+    const modal = document.getElementById("connectModal");
+    const btn = document.getElementById("connectBtn");
+    const closeBtn = document.querySelector(".close-modal");
+
+    if (btn) btn.onclick = () => modal.style.display = "flex";
+    if (closeBtn) closeBtn.onclick = () => modal.style.display = "none";
+    
+    window.onclick = (e) => { 
+        if (e.target === modal) modal.style.display = "none"; 
+    }
+
+    // Get In Touch Modal
+    const contactModal = document.getElementById("contactModal");
+    const getInTouchBtn = document.getElementById("getInTouchBtn");
+    const closeContactBtn = document.querySelector(".close-contact-modal");
+
+    if (getInTouchBtn) getInTouchBtn.onclick = () => contactModal.style.display = "flex";
+    if (closeContactBtn) closeContactBtn.onclick = () => contactModal.style.display = "none";
+    
+    window.onclick = (e) => { 
+        if (e.target === contactModal) contactModal.style.display = "none";
+    }
+
+    document.getElementById("connectForm").onsubmit = (e) => {
+        e.preventDefault();
+        alert("Thank you! We will contact you soon.");
+        modal.style.display = "none";
+    };
+
+    // Arrow buttons link to services page
+    document.querySelectorAll('.arrow-btn').forEach(btn => {
+        btn.onclick = () => window.location.href = 'services.html';
+    });
+
+    // Glowy Cursor Logic
+    const cursor = document.querySelector('.glow-cursor');
+    
+    document.addEventListener('mousemove', e => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    
+    const inputs = document.querySelectorAll('input, textarea, button, .close-modal, .close-contact-modal');
+    inputs.forEach(input => {
+        input.addEventListener('mouseenter', () => {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.backgroundColor = 'rgba(255, 215, 0, 0.1)';
+        });
+        input.addEventListener('mouseleave', () => {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.backgroundColor = 'transparent';
+        });
+        })();
+    });
+</script>
+
+
+
+>>>>>>> 1a0e7760ff193a85b760aa33527ea346d60c7576
 </body>
 </html>

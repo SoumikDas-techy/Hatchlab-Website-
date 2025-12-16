@@ -232,12 +232,18 @@
 </head>
         
 
+<body>
+    <div id="particles-js"></div>
     <div class="glow-cursor"></div>
     <header class="main-header">
         <div class="header-logo">
+<<<<<<< HEAD
           <a href="index_sample_1_fixed.html">
             <img src="images/logo.png" alt="Hatchlab Logo">
             </a>
+=======
+            <a href="index_sample_1_fixed.html"><img src="images/logo.png" alt="Hatchlab Logo"></a>
+>>>>>>> 9cf10810dc1434fadbb97140facdfc4f976f3a02
             <span class="brand-name">Hatchlab Innovations</span>
         </div>
         <nav class="header-nav">
@@ -272,7 +278,7 @@
     <h2>Join Our Team</h2>
     <div class="card">
       <h3>Come, Build the Future With Us</h3>
-      <p>Explore Open Roles</p>
+      <p2>Explore Open Roles</p>
 
       <p>Drop Your CV at</p>
       <a href="mailto:hrd@hatchlabinnovations.com" class="email">
@@ -324,12 +330,99 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": true
+    },
+    "size": {
+      "value": 3,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 200,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
 <script>
 // Glow Cursor Effect
-const glowCursor = document.querySelector('.glow-cursor');
-document.addEventListener('mousemove', (e) => {
-  glowCursor.style.left = e.clientX + 'px';
-  glowCursor.style.top = e.clientY + 'px';
+document.addEventListener('DOMContentLoaded', function() {
+    const glowCursor = document.querySelector('.glow-cursor');
+    document.addEventListener('mousemove', (e) => {
+        glowCursor.style.left = e.clientX + 'px';
+        glowCursor.style.top = e.clientY + 'px';
+    });
 });
 </script>
 

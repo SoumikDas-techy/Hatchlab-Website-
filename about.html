@@ -673,35 +673,6 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </div>
 
-
-
-<script>
-  // Get In Touch Modal Logic
-  const contactModal = document.getElementById("contactModal");
-  const getInTouchBtn = document.getElementById("getInTouchBtn");
-  const closeContactBtn = document.querySelector(".close-contact-modal");
-
-  // Open modal
-  if (getInTouchBtn) {
-    getInTouchBtn.onclick = () => {
-      contactModal.style.display = "flex";
-    };
-  }
-
-  // Close with × button
-  if (closeContactBtn) {
-    closeContactBtn.onclick = () => {
-      contactModal.style.display = "none";
-    };
-  }
-
-  // Close when clicking outside the modal content
-  window.onclick = (e) => {
-    if (e.target === contactModal) {
-      contactModal.style.display = "none";
-    }
-  };
-</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("contactModal");

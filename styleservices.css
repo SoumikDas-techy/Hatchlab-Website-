@@ -1487,3 +1487,68 @@ html, body {
         line-height: 1.5;
     }
 }
+/* ========================= */
+/* 🔹 SWAP ALL YELLOW COLORS TO #ffc107 🔹 */
+/* ========================= */
+
+/* Glow Cursor */
+.glow-cursor {
+    background: radial-gradient(circle, #ffc107 0%, rgba(255, 193, 7, 0.3) 50%, transparent 70%);
+    box-shadow: 0 0 10px #ffc107;
+}
+
+/* Footer Buttons / Form */
+.footer-form input[type="email"]:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+.footer-form button,
+.footer-form button:hover {
+    background: linear-gradient(135deg, #ffc107, #ffd700);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Headings / Underline Gradients */
+.middle-text::after,
+.what-we-do h2::after,
+h1:not(.content h1)::after,
+h2:not(.content h2)::after {
+    background: linear-gradient(90deg, transparent, #ffc107, transparent);
+}
+
+/* Navbar / Connect Button Hover */
+.nav-links li a:hover,
+.connect-button:hover,
+#connectBtn:hover {
+    color: #ffc107;
+}
+
+/* Footer Contact / Links Hover */
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #ffc107;
+}
+
+/* Main Header underline */
+.main-header::after {
+    background: #ffc107;
+}
+
+/* Footer top line */
+.footer-section::before {
+    background: #ffc107;
+}
+.overlay-boxone,
+.overlay-boxtwo {
+    border-color: #ffc107 !important;
+}
+/* Footer */
+.footer-links a:hover,
+.footer-form button:hover,
+.social-icons a:hover,
+.main-header::after,
+.footer-section::before {
+    border-color: #ffc107 !important;
+    background-color: #ffc107 !important;
+}

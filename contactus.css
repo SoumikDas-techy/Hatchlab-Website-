@@ -1667,3 +1667,54 @@ body {
     gap: 15px;
     align-items: center;
 }
+/* ====== OVERRIDE ALL YELLOW SHADES TO #ffc107 ====== */
+
+/* Headings and underlines */
+h1, h1::after,
+h2, h2::after,
+.section h2::after {
+    color: #ffc107 !important;
+    
+    border-color: #ffc107 !important;
+}
+
+/* Navbar hover links */
+.nav-links li a:hover,
+.navbar #connectBtn:hover {
+    color: #ffc107 !important;
+}
+
+/* Contact / Email icons */
+.contact-item::before,
+.email-item::before {
+    color: #ffc107 !important;
+}
+.contact-item:hover,
+.email-item:hover {
+    color: #ffc107 !important;
+    text-shadow: 0 0 6px #ffc107, 0 0 12px #ffc107 !important;
+}
+
+/* Blobs */
+.header-gradient > div:nth-child(3) {
+    background: #ffc107 !important;
+}
+
+/* Sidebar hover glow */
+.left-sidebar:hover,
+.sidebar-text:hover,
+.sidebar-social a:hover {
+    box-shadow: 0 0 15px #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+}
+
+/* Footer */
+.footer-links a:hover,
+.footer-form button:hover,
+.social-icons a:hover,
+.main-header::after,
+.footer-section::before {
+    border-color: #ffc107 !important;
+    background-color: #ffc107 !important;
+}

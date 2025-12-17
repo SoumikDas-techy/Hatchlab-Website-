@@ -988,54 +988,56 @@ a.email:hover {
     align-items: center;
 }
 /* ===============================
-   🔶 REPLACE ALL YELLOW/GOLD TO #ffc107
+   🔶 REPLACE ALL YELLOW
    =============================== */
 
 /* Glow Cursor */
 .glow-cursor {
-    background: radial-gradient(circle, #ffc107 0%, rgba(255, 193, 7, 0.3) 50%, transparent 70%) !important;
-    box-shadow: 0 0 10px #ffc107 !important;
+    background: radial-gradient(circle, yellow 0%, rgba(255, 193, 7, 0.3) 50%, transparent 70%) !important;
+    box-shadow: 0 0 10px yellow !important;
 }
 
 /* Navbar link hover */
 .nav-links li a:hover,
 .navbar #connectBtn:hover {
-    color: #ffc107 !important;
+    color: yellow!important;
 }
 
 /* Headings */
 h1, h2 {
-    color: #ffc107 !important;
+    color: yellow !important;
 }
-
+.drop {
+  color: yellow !important;
+}
 h1::after,
 h2::after {
-    background: linear-gradient(90deg, transparent, #ffc107, transparent) !important;
+    background: linear-gradient(90deg, transparent, yellow, transparent) !important;
 }
 
 /* Cards */
 .card {
-    border-color: #ffc107 !important;
+    border-color: yellow !important;
     box-shadow: 0 0 14px rgba(255, 193, 7, 0.4) !important;
-    border-left: 5px solid #ffc107 !important;
+    border-left: 5px solid yellow !important;
 }
 
 .card h3 {
-    color: #ffc107 !important;
+    color: yellow !important;
 }
 
 .card:hover h3 {
-    color: #ffc107 !important;
+    color: yellow !important;
 }
 
 .card:hover {
-    border: 2px solid #ffc107 !important;
+    border: 2px solid yellow !important;
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35), 0 0 10px rgba(255, 193, 7, 0.25) !important;
 }
 
 /* Email links */
 email, a.email:hover {
-    color: #ffc107 !important;
+    color: yellow!important;
     border-color: rgba(255, 193, 7, 0.6) !important;
     background: linear-gradient(145deg, rgba(255, 193, 7, 0.08), rgba(0, 0, 0, 0.6)) !important;
 }
@@ -1046,8 +1048,8 @@ email, a.email:hover {
 .social-icons a:hover,
 .main-header::after,
 .footer-section::before {
-    border-color: #ffc107 !important;
-    background-color: #ffc107 !important;
+    border-color: yellow !important;
+    background-color: yellow !important;
 }
 
 

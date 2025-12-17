@@ -1667,46 +1667,46 @@ body {
     gap: 15px;
     align-items: center;
 }
-/* ====== OVERRIDE ALL YELLOW SHADES TO #ffc107 ====== */
+/* ====== OVERRIDE ALL YELLOW SHADES ====== */
 
 /* Headings and underlines */
 h1, h1::after,
 h2, h2::after,
 .section h2::after {
-    color: #ffc107 !important;
+    color: yellow !important;
     
-    border-color: #ffc107 !important;
+    border-color: yellow!important;
 }
 
 /* Navbar hover links */
 .nav-links li a:hover,
 .navbar #connectBtn:hover {
-    color: #ffc107 !important;
+    color: yellow !important;
 }
 
 /* Contact / Email icons */
 .contact-item::before,
 .email-item::before {
-    color: #ffc107 !important;
+    color: yellow !important;
 }
 .contact-item:hover,
 .email-item:hover {
-    color: #ffc107 !important;
-    text-shadow: 0 0 6px #ffc107, 0 0 12px #ffc107 !important;
+    color: yellow!important;
+    text-shadow: 0 0 6px yellow, 0 0 12px yellow !important;
 }
 
 /* Blobs */
 .header-gradient > div:nth-child(3) {
-    background: #ffc107 !important;
+    background: yellow !important;
 }
 
 /* Sidebar hover glow */
 .left-sidebar:hover,
 .sidebar-text:hover,
 .sidebar-social a:hover {
-    box-shadow: 0 0 15px #ffc107 !important;
-    border-color: #ffc107 !important;
-    color: #ffc107 !important;
+    box-shadow: 0 0 15px yellow !important;
+    border-color: yellow !important;
+    color: yellow !important;
 }
 
 /* Footer */
@@ -1715,8 +1715,8 @@ h2, h2::after,
 .social-icons a:hover,
 .main-header::after,
 .footer-section::before {
-    border-color: #ffc107 !important;
-    background-color: #ffc107 !important;
+    border-color: yellow !important;
+    background-color: yellow !important;
 }
 
 

@@ -1056,7 +1056,7 @@ h2::after {
 }
 
 /* Email links */
-email, a.email:hover {
+a.email:hover {
     color: yellow!important;
     border-color: rgba(255, 193, 7, 0.6) !important;
     background: linear-gradient(145deg, rgba(255, 193, 7, 0.08), rgba(0, 0, 0, 0.6)) !important;

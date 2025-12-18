@@ -155,10 +155,6 @@
 
     .get-in-touch-btn {
       padding: 15px 30px;
-<<<<<<< HEAD
->>>>>>> fed179a (some fix)
-=======
->>>>>>> fc0d9b7 (get in touch added to homepage 2)
       background: #fff;
       border: none;
       color: #000;
@@ -1549,31 +1545,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactBtn = document.querySelector('.contact-btn');
     const words = document.querySelectorAll('.hero-title .word');
 
-<<<<<<< HEAD
-    function animateChars() {
-      heroChars.forEach((char, index) => {
-        char.style.animation = 'none';
-        char.offsetHeight;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        char.style.animation = `bounceElastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards` ;
-=======
-        char.style.animation = `bounceElastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards`;
->>>>>>> 8bdbc51 (Updated sections)
-=======
-        char.style.animation = `bounceElastic 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards`;
->>>>>>> a876e86 (Updated mobile view, header fix, responsive improvements)
-        char.style.animationDelay = `${index * 0.08}s`;
-      });
-
-      const totalChars = heroChars.length;
-      const titleDuration = (totalChars * 0.08 + 0.8) * 1000;
-=======
     // Start continuous bounce after drop animation completes
     setTimeout(() => {
       words.forEach(word => word.classList.add('bouncing'));
     }, 1200);
->>>>>>> 1dc0fa5 (Home page changes)
 
     setTimeout(() => {
       if (heroParagraph) heroParagraph.classList.add('animate');
@@ -1711,8 +1686,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 </script>
-
-
 
 
 </body>

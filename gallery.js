@@ -245,7 +245,6 @@ const galleryObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe gallery section when it exists
 document.addEventListener('DOMContentLoaded', () => {
     const gallerySection = document.querySelector('.gallery-section');
     if (gallerySection) {

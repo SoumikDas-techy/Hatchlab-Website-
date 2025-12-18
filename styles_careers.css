@@ -876,22 +876,9 @@ a.email:active {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6eb1d29 (UPDATE)
 a.email:hover {
   color: #fcd703;      /* gold on hover */
 }
-<<<<<<< HEAD
->>>>>>> fb6f72f (new changes)
-=======
-a.email:hover {
-  color: #fcd703;      /* gold on hover */
-}
->>>>>>> 878382b (change)
-=======
 
 
 /* FOOTER GRADIENT BLOBS (FIXED + SMOOTH + NON-GLITCHY) */
@@ -990,10 +977,6 @@ a.email:hover {
     transform: translate(0px, 0px) scale(1);
   }
 }
-<<<<<<< HEAD
-
->>>>>>> df3ec29 (footer)
-=======
 .footer-form button {
     white-space: nowrap;   /* prevents line break */
     padding: 12px 28px;    /* increase width */
@@ -1004,9 +987,6 @@ a.email:hover {
     gap: 15px;
     align-items: center;
 }
-<<<<<<< HEAD
->>>>>>> 1e70556 (contact us in single line)
-=======
 /* ===============================
    🔶 REPLACE ALL YELLOW
    =============================== */
@@ -1071,9 +1051,6 @@ a.email:hover {
     border-color: yellow !important;
     background-color: yellow !important;
 }
-<<<<<<< HEAD
->>>>>>> 5479c34 (CHANGED YELLOW SHADE)
-=======
 
 
 
@@ -1192,59 +1169,3 @@ a.email:hover {
     cursor: auto; 
   }
 }
-<<<<<<< HEAD
-/* ===== REMOVE LINE BELOW "Hatchlab Innovations" ===== */
-@media (max-width: 768px) {
-  .header-nav {
-    border-top: none !important;
-    padding-top: 0 !important;
-    margin-top: 10px !important; /* keeps spacing without line */
-  }
-}
-/* ===== CENTER ABOUT / SERVICE / CAREER / CONTACT (MOBILE) ===== */
-@media (max-width: 768px) {
-
-  .header-nav {
-    display: flex !important;
-    justify-content: center !important;   /* 👈 centers the whole group */
-    align-items: center !important;
-    gap: 22px !important;                 /* spacing between items */
-    width: 100% !important;
-    margin-top: 10px !important;
-    padding: 0 !important;
-  }
-
-  .header-nav a {
-    text-align: center !important;
-    white-space: nowrap !important;
-    font-size: 14px !important;
-  }
-}
-/* ===== MOBILE HEADER: FIX SOCIAL ICONS (in, ig, fb) ===== */
-@media (max-width: 768px) {
-
-  .header-logo::after {
-    content: "\f0e1  \f16d  \f39e"; 
-    /* LinkedIn | Instagram | Facebook */
-    
-    font-family: "Font Awesome 6 Brands";
-    font-weight: 400;
-    font-size: 13px;
-    color: #ffffff;
-
-    display: inline-flex;
-    align-items: center;
-    letter-spacing: 12px; /* spacing between icons */
-  }
-}
-
-
-
-.header-logo::after {
-  content: none !important;
-}
-
-
->>>>>>> 8150009 (FIXED MOBILE VIEW NAVBAR)
-=======
->>>>>>> 6f5a89c (mobile fix)

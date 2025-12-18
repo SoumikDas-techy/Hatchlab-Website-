@@ -1692,7 +1692,6 @@ h2, h2::after,
     height: 40px;
   }
 }
-
 @media (max-width: 767px) {
   .glow-cursor {
     display: none !important;

@@ -42,7 +42,6 @@ class SimpleGallery {
         ];
         this.init();
     }
-
     init() {
         this.renderGallery();
         this.updateStats();

@@ -14,7 +14,6 @@ function showSlide(n) {
     const prevSlide = slides[slideIndex];
     const newSlide = slides[targetIndex];
 
-    // Determine direction: forward if shortest path is +1, backward if -1 (for 3 slides, diff=2 means backward)
     let diff = (targetIndex - slideIndex + slides.length) % slides.length;
     let forward = diff <= slides.length / 2;
 

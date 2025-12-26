@@ -91,7 +91,6 @@ if (typeof HatchlabGallery !== 'undefined') {
     };
 }
 
-// Initialize filters when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Wait for main gallery to initialize first
     setTimeout(() => {

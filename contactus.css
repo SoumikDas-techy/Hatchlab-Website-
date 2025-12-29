@@ -1073,7 +1073,7 @@ html, body {
 /* Footer styling */
 .footer-section {
     background: #0b0b0b;
-    padding: 60px 20px;
+    padding: 30px 20px;
     color: #fff;
     font-family: 'Lora', serif;
     position: relative;
@@ -1237,8 +1237,10 @@ body {
   top: 0;                     
   left: 0;
   width: 100%;                 
-  height: 2px;
   background: #fcd703;
+  z-index: 10; 
+  top: 0;  
+  height: 1px !important;                   
    
 }
 /* Footer styling */
@@ -1404,11 +1406,11 @@ body {
 /* FOOTER GRADIENT BLOBS (FIXED + SMOOTH + NON-GLITCHY) */
 .footer-section {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   left: 0;           /* align to left */
   right: 0;          /* align to right */
-  overflow: hidden;
+  
   padding: 60px 20px; /* optional: spacing inside footer */
   box-sizing: border-box; /* include padding in width */
 }
@@ -1420,6 +1422,7 @@ body {
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
+  
 }
 
 /* each blob */
@@ -1480,6 +1483,7 @@ body {
 .footer-social {
   position: relative;
   z-index: 5;
+ 
 }
 
 /* FIXED ANIMATION (smooth, loop, no jump) */
@@ -1658,41 +1662,7 @@ email-item:hover {
   }
 }/* ================= FOOTER (UNCHANGED) ================= */
 
-@media (max-width: 767px) {
-  .footer-section {
-    padding: 15px 10px; 
-  }
 
-  .footer-column {
-    margin-bottom: 10px; 
-  }
-
-  .footer-column p,
-  .footer-column a,
-  .footer-form input,
-  .footer-form button {
-    font-size: 13px;
-  }
-
-  .footer-form input,
-  .footer-form button {
-    padding: 6px 10px;
-  }
-
-  .footer-social p {
-    font-size: 11px;
-  }
-
-  .social-icons a {
-    font-size: 16px; 
-    margin: 0 3px;   
-  }
-
-  .footer-gradient div {
-    width: 40px;  
-    height: 40px;
-  }
-}
 @media (max-width: 767px) {
   .glow-cursor {
     display: none !important;
@@ -1700,4 +1670,112 @@ email-item:hover {
   body {
     cursor: auto;
   }
+}
+@media (max-width: 767px) {
+
+  
+  .footer-section {
+    padding: 16px 12px !important;  /* compact padding */
+    overflow: hidden !important;
+  }
+
+  .footer-content {
+    flex-direction: column !important; /* stack columns */
+    gap: 12px !important;             /* reduce space between columns */
+    padding: 0 !important;
+  }
+
+  .footer-column {
+    flex: 1 1 100% !important;        /* full width */
+    min-width: 0 !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;    /* center text like other mobile pages */
+  }
+
+  .footer-column p,
+  .footer-column a,
+  .footer-meta {
+    font-size: 12px !important;       /* smaller font */
+    margin-bottom: 4px !important;
+    line-height: 1.4 !important;
+  }
+
+  .footer-form {
+    flex-direction: column !important;  /* stack input + button */
+    gap: 6px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .footer-form input[type="email"] {
+    width: 100% !important;            /* full width input */
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+    border-radius: 20px !important;
+  }
+
+  .footer-form button {
+    width: 100% !important;            /* full width button */
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+    border-radius: 20px !important;
+  }
+
+  .footer-social {
+    margin-top: 10px !important;
+    text-align: center !important;
+  }
+
+  .social-icons a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
+    margin: 0 4px !important;
+  }
+
+
+
+  .footer-gradient {
+    position: absolute !important;
+    inset: 0 !important;
+    pointer-events: none;
+  }
+
+ .footer-gradient div {
+    width: 40px;  
+    height: 40px;
+  }
+
+}
+
+
+
+
+.footer-section {
+  padding: 20px 20px !important;  
+}
+
+.footer-content {
+  gap: 20px !important;           
+}
+
+.footer-column {
+  margin-bottom: 8px !important;   
+}
+
+.footer-meta {
+  margin-top: 6px !important;
+  line-height: 1.4;
+}
+
+.footer-links a,
+.footer-contact a {
+  margin-bottom: 6px !important;   }
+
+.footer-form {
+  gap: 8px !important;
+}
+
+.footer-social {
+  margin-top: 6px !important;
 }

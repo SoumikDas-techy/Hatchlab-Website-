@@ -1755,7 +1755,6 @@ email-item:hover {
   }
 }
 
-
 .footer-section {
   padding: 20px 20px !important;   
 }
@@ -1784,4 +1783,16 @@ email-item:hover {
 
 .footer-social {
   margin-top: 6px !important;
+}
+/* FIX: keep email in one line and inside the box */
+.contact-info-row {
+  min-width: 0;
+}
+
+.contact-info-row p,
+.contact-info-row a,
+.contact-info-row span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

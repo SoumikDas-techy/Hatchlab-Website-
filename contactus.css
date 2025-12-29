@@ -1784,15 +1784,24 @@ email-item:hover {
 .footer-social {
   margin-top: 6px !important;
 }
-/* FIX: keep email in one line and inside the box */
-.contact-info-row {
+
+/* ===== FORCE EMAIL TO STAY ONE LINE INSIDE BOX ===== */
+
+/* allow flex children to shrink */
+.contact-info-item,
+.contact-info-item div,
+.contact-info-item p,
+.contact-info-item a,
+.contact-info-item span {
   min-width: 0;
 }
 
-.contact-info-row p,
-.contact-info-row a,
-.contact-info-row span {
+/* email text control */
+.contact-info-item p,
+.contact-info-item a,
+.contact-info-item span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+

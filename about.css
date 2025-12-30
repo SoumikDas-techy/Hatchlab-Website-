@@ -1363,7 +1363,7 @@ html, body {
 
 @media (max-width: 768px) {
   .main-header {
-    padding-bottom: 104px !important; /* ⬅ pushes yellow line down */
+    padding-bottom: 104px !important; 
   }
 }
 
